@@ -26,6 +26,7 @@ cacheSolve <- function(x, ...) {
   m <- x$getinverse()
   ## If m already exists (via the getinverse 'method'), get the cached matrix
   if(!is.null(m)) {
+    ## Print a message, to 'prove'your getting the cached version
     message("getting cached data")
     return(m)
   }
